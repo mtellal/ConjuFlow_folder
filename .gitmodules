@@ -1,3 +1,6 @@
 [submodule "test"]
 	path = test
 	url = git@github.com:mtellal/ConjuFlow
+[submodule "ConjuFlow"]
+	path = ConjuFlow
+	url = git@github.com:mtellal/ConjuFlow

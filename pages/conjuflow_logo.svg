@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="gC" x1="90" y1="70" x2="420" y2="430" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5B2EFF"/>
+      <stop offset="0.5" stop-color="#7447FF"/>
+      <stop offset="1" stop-color="#A16BFF"/>
+    </linearGradient>
+    <linearGradient id="gW" x1="165" y1="190" x2="390" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5B2EFF"/>
+      <stop offset="0.55" stop-color="#7548FF"/>
+      <stop offset="1" stop-color="#A16BFF"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Grand C -->
+  <path
+    d="M365 111
+       C324 78 270 64 216 73
+       C140 86 90 150 90 256
+       C90 362 140 426 216 439
+       C270 448 324 434 365 401"
+    stroke="url(#gC)"
+    stroke-width="58"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- Vague supérieure -->
+  <path
+    d="M173 218
+       C209 188 244 188 281 210
+       C314 230 345 232 380 206"
+    stroke="url(#gW)"
+    stroke-width="26"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- Vague inférieure -->
+  <path
+    d="M173 286
+       C209 256 244 256 281 278
+       C314 298 345 300 380 274"
+    stroke="url(#gW)"
+    stroke-width="26"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>

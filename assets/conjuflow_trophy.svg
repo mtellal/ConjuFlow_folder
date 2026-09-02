@@ -1,0 +1,48 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cupGrad" x1="120" y1="90" x2="360" y2="350" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFD84A"/>
+      <stop offset="0.55" stop-color="#FFB51F"/>
+      <stop offset="1" stop-color="#FF9500"/>
+    </linearGradient>
+    <linearGradient id="cupShade" x1="160" y1="120" x2="330" y2="340" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFE875" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#FF9F0A" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="baseGrad" x1="150" y1="360" x2="350" y2="455" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7B61FF"/>
+      <stop offset="1" stop-color="#4B22E8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#6B4EFF" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect x="90" y="70" width="22" height="22" rx="4" transform="rotate(45 90 70)" fill="#6A3CFF"/>
+  <rect x="394" y="84" width="20" height="20" rx="4" transform="rotate(45 394 84)" fill="#FF9D00"/>
+  <rect x="58" y="160" width="18" height="18" rx="4" transform="rotate(45 58 160)" fill="#00C853"/>
+  <rect x="430" y="165" width="18" height="18" rx="4" transform="rotate(45 430 165)" fill="#00C853"/>
+  <path d="M80 312C96 326 96 340 80 352" stroke="#D8D2FF" stroke-width="12" stroke-linecap="round"/>
+  <path d="M424 332C440 346 440 360 424 372" stroke="#6A3CFF" stroke-width="12" stroke-linecap="round"/>
+
+  <g filter="url(#shadow)">
+    <path d="M154 150H120C88 150 76 174 80 205C85 245 110 279 154 290" stroke="#FFAA12" stroke-width="24" stroke-linecap="round"/>
+    <path d="M358 150H392C424 150 436 174 432 205C427 245 402 279 358 290" stroke="#FFAA12" stroke-width="24" stroke-linecap="round"/>
+
+    <rect x="132" y="108" width="248" height="42" rx="20" fill="url(#cupGrad)"/>
+    <rect x="150" y="116" width="116" height="14" rx="7" fill="#FFF2A6" fill-opacity="0.55"/>
+
+    <path d="M148 142H364V226C364 299 318 344 256 344C194 344 148 299 148 226V142Z" fill="url(#cupGrad)"/>
+    <path d="M168 152H210V250C210 292 225 316 246 332C198 324 168 285 168 226V152Z" fill="url(#cupShade)"/>
+
+    <path d="M256 184L270.3 213.1L302.4 217.8L279.2 240.4L284.7 272.4L256 257.3L227.3 272.4L232.8 240.4L209.6 217.8L241.7 213.1L256 184Z" fill="white"/>
+
+    <path d="M226 340H286C281 362 282 378 300 392H212C230 378 231 362 226 340Z" fill="#FFA20A"/>
+
+    <rect x="166" y="386" width="180" height="54" rx="18" fill="url(#baseGrad)"/>
+    <rect x="146" y="432" width="220" height="34" rx="14" fill="#4B22E8"/>
+    <rect x="222" y="403" width="68" height="22" rx="8" fill="#FFC83D"/>
+  </g>
+
+  <ellipse cx="256" cy="472" rx="150" ry="16" fill="#DCD6FF" fill-opacity="0.7"/>
+</svg>

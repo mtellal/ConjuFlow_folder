@@ -1,0 +1,15 @@
+couleurs:
+Violet: 7A56FB
+Violet fond, pour icon ou badge par exemple: 7A56FB
+Basés sur le résultat d'une session mais peut être réutilisé pour beaucoup d'autres choses: 22C55E, 84CC16, EF4444, F59E0B, F97316
+bleu: 567DFB
+variation de bleu: 3,5,70
+fond d'écran: FDFDFD
+variations de noir selon opacité: 5,15,20,30,50,70,90
+variations violet: 70
+vert: 1F9D00
+variatons vert; 3,5,10,70
+jaune: FFAC33 avec variations 3,5,10
+orange: FF6A00
+rose: EA596E
+blea claire: 2196F3

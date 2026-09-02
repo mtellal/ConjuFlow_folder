@@ -1,0 +1,103 @@
+12. Notre roadmap UX/produit devient assez claire
+
+Je procéderais maintenant dans cet ordre :
+
+Définir complètement l'onboarding, écran par écran et comportement par comportement.
+Définir le niveau initial / mini-test.
+Concevoir connexion / inscription / mode anonyme.
+Concevoir la première session / premier lancement.
+Faire une refonte visuelle de Home.
+Ajouter la langue active + niveau à Progression.
+Concevoir les empty states Progression connecté/anonyme/nouvelle langue.
+Harmoniser Train avec le nouveau design.
+Faire une passe sur Quiz / Résultats / Corrections pour harmoniser les composants sans refaire leur UX.
+Faire enfin une revue complète du parcours utilisateur, depuis l'installation jusqu'à plusieurs semaines d'utilisation.
+Parcours proposé
+
+Installation → Bienvenue → Langue interface → Langue étudiée → Niveau déclaré → Première session → Home
+
+
+
+
+Ça nous donne une logique frontend assez simple :
+COMPOSANT
+│
+├── données disponibles
+│     └── afficher les données
+│
+└── données indisponibles
+      │
+      ├── chargement
+      │     └── skeleton
+      │
+      ├── aucune donnée
+      │     └── empty state normal
+      │
+      ├── hors connexion
+      │     └── empty state offline
+      │
+      └── erreur API
+            └── empty state erreur + Réessa
+     
+     Construire les parcours utilisateur complets       
+Nouveau user → Onboarding → Première session → Résultat onboarding → Home
+Entraînement → Home/Train → Configuration → Préparation → Quiz → Résultats → Corrections
+Compte anonyme → utilisation → Sign up → compte connecté
+Authentification → Login / Sign up / Forgot password
+Progression → langue → statistiques → entraînement ciblé
+Offline → Home / Train bloqué / Progression cache / Profil
+Erreurs → retry / cache / sauvegarde locale / récupérationyer
+
+
+
+Besoin	Choix proposé
+Framework	Expo + React Native + TypeScript
+Navigation	Expo Router
+État serveur/API	TanStack Query
+État global local	Zustand
+Stockage persistant simple	MMKV
+Formulaires	React Hook Form
+Validation	Zod
+API HTTP	fetch ou Axios
+Animations	Reanimated
+Icônes	Lucide React Native
+Tests unitaires	Jest
+Tests composants	React Native Testing Library
+
+conjuflow/
+├── app/                    # routes Expo Router
+│   ├── (tabs)/
+│   ├── onboarding/
+│   ├── auth/
+│   ├── quiz/
+│   └── _layout.tsx
+│
+├── src/
+│   ├── components/
+│   │   ├── ui/
+│   │   └── features/
+│   │
+│   ├── features/
+│   │   ├── auth/
+│   │   ├── home/
+│   │   ├── training/
+│   │   ├── quiz/
+│   │   ├── results/
+│   │   ├── progression/
+│   │   └── profile/
+│   │
+│   ├── hooks/
+│   ├── services/
+│   │   └── api/
+│   ├── stores/
+│   ├── storage/
+│   ├── theme/
+│   ├── types/
+│   └── utils/
+│
+├── assets/
+│   ├── images/
+│   ├── icons/
+│   └── fonts/
+│
+└── package.json
